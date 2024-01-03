@@ -59,3 +59,17 @@ def inf_biblioteka(ksiązka1, ksiązka2, ksiązka3):
             słownik3(ksiązka3)
         else:
             break
+
+
+def usuwanie(ksiązka1, ksiązka2, ksiązka3):
+    print("Wybierz słownik który chcesz edytować(1,2,3)")
+    inp = input().lower()
+    if inp == "1":
+        print("--" * 25)
+        del ksiązka1["tytuł", "ilość stron"]
+    elif inp == "2":
+        print("--" * 25)
+        del ksiązka2["tytuł", "ilość stron"]
+    elif inp == "3":
+        print("--" * 25)
+        del ksiązka3["tytuł", "ilość stron"]
